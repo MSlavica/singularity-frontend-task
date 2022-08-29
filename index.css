@@ -1,0 +1,345 @@
+body {
+    height: auto;
+    background-image: url("./assets/img/chef.jpg");
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.navbar__container {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.navbar__logo-container {
+    flex-grow: 1;
+    margin-left: 100px;
+}
+
+.navbar__logo-container img {
+    width: 160px;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 88px;
+    font-size: 15px;
+}
+
+.navbar__links li {
+    list-style-type: none;
+}
+.navbar__links li a {
+    color: white;
+    text-decoration: none;
+    pointer-events: all;
+}
+.navbar__links li a:hover {
+    color: var(--gold);
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.navbar__icons-container {
+    margin-left: 84px;
+    margin-right: 100px;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+/* HEADLINE */
+.headline__container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 330px 380px 245px 0;
+}
+
+.headline__content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline__title {
+    font-size: 138px;
+    color: var(--gold);
+    font-family: "BodegaSans-Light";
+    font-weight: 100;
+}
+
+.headline__subtitle {
+    font-size: 30px;
+}
+
+.headline__divider {
+    height: 3px;
+    width: 140px;
+    background-color: var(--gold);
+    border-radius: 2px;
+    margin: 30px 0;
+}
+
+.headline__description {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.angle-down__container {
+    text-align: center;
+}
+.angle-down__container img:hover {
+    cursor: pointer;
+}
+
+/* GALLERY */
+.gallery__header {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 204px;
+}
+.gallery__main-title-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.separator {
+    border-radius: 2px;
+    width: 56px;
+    height: 3px;
+    background-color: white;
+    opacity: 25%;
+}
+.gallery__main-title {
+    color: var(--gold);
+    font-family: BodegaSans-Light;
+    font-size: 72px;
+}
+
+/* GALLERY GRID */
+.gallery__items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 60px;
+    margin: 60px 100px 0 100px;
+    width: calc(100% - 200px);
+}
+
+.gallery__item-container img {
+    width: 100%;
+}
+
+.gallery__item-container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 6px;
+}
+
+.gallery__item-title {
+    font-size: 41px;
+    color: var(--gold);
+    font-family: BodegaSans-Light;
+}
+.gallery__item-description {
+    font-size: 18px;
+    line-height: 32px;
+}
+.gallery__item-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.gallery__item-links > * {
+    flex-shrink: 0;
+}
+.gallery__item-links > span {
+    color: var(--gold);
+    cursor: pointer;
+}
+.gallery__item-links > img {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+.gallery__more-videos {
+    text-align: center;
+    margin-top: 62px;
+}
+
+/* PODCASTS */
+.podcasts {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 1.5rem;
+    padding: 0 6rem;
+}
+
+.podcast__icons {
+    height: 50px;
+    cursor: pointer;
+}
+
+.podcast__items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+}
+
+.podcast__header {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.podcast__main-title-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.separator {
+    border-radius: 2px;
+    width: 56px;
+    height: 3px;
+    background-color: white;
+    opacity: 25%;
+}
+.podcast__main-title {
+    color: var(--gold);
+    font-family: BodegaSans-Light;
+    font-size: 72px;
+}
+
+.podcast__item-container {
+    display: flex;
+    gap: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.podcast__img-container img {
+    width: 200px;
+}
+
+.podcast__item-title {
+    padding-top: 5px;
+    font-size: 36px;
+    color: var(--gold);
+    font-family: BodegaSans-Light;
+}
+.podcast_item-description {
+    padding-top: 10px;
+    line-height: 32px;
+}
+.podcast_item-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 26px;
+    font-size: 15px;
+}
+.podcast_item-links > * {
+    flex-shrink: 0;
+}
+.podcast_item-links > span {
+    color: var(--gold);
+    cursor: pointer;
+}
+.podcast_item-links > img {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.podcast__more-button {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer-wrapper {
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer__main-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(0, 0, 0, 0.6) 65%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+}
+
+.footer__grid {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    row-gap: 40px;
+}
+
+.footer__logo {
+    width: 160px;
+}
+
+.footer__subscribe-section {
+    font-size: 28px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 30px;
+}
+
+.footer__contact-icons {
+    display: flex;
+    gap: 30px;
+}
+.footer__contact-icons > * {
+    cursor: pointer;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__links li {
+    list-style-type: none;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+}
+.footer__links li a:hover {
+    color: var(--gold);
+    transition-property: color;
+    transition-duration: 300ms;
+}

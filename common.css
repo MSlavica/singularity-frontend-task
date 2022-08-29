@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "BodegaSans-Light";
+    src: url("./assets/fonts/BodegaSans_LightOldstyle.ttf");
+}
+@font-face {
+    font-family: "LibreFranklin-Thin";
+    src: url("./assets/fonts/LibreFranklin-Thin.ttf");
+}
+
+:root {
+    --gold: #c29824;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-family: "LibreFranklin-Thin", sans-serif;
+}
