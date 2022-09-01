@@ -126,6 +126,29 @@ body {
     font-size: 72px;
 }
 
+/* PLAY ICON (Common for gallery and podcasts) */
+.play-icon__container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-icon__container img {
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+}
+.play-icon__background {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
 /* GALLERY GRID */
 .gallery__items-grid {
     display: grid;
@@ -136,47 +159,21 @@ body {
     width: calc(100% - 200px);
 }
 
-.gallery__item-container {
-    cursor: pointer;
-}
-.gallery__item-container img {
-    width: 100%;
-}
-
 .gallery__image-container {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
-.gallery__image-container .gallery__item-cover-image {
+.gallery__item-cover-image {
+    width: 100%;
     transition-duration: 500ms;
     transform: scale(1);
 }
-.gallery__item-container:hover .gallery__item-cover-image {
+.gallery__image-container:hover .gallery__item-cover-image {
     transform: scale(1.1);
 }
 
-.gallery__play-icon-container {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gallery__play-icon-container img {
-    width: 35px;
-    height: 35px;
-    z-index: 1;
-}
-.gallery__play-icon-background {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: transparent;
-    position: absolute;
-    transition-property: all;
-    transition-duration: 500ms;
-}
-.gallery__item-container:hover .gallery__play-icon-background {
+.gallery__image-container:hover .play-icon__background {
     background-color: var(--gold);
 }
 
@@ -271,8 +268,24 @@ body {
     font-size: 20px;
 }
 
-.podcast__img-container img {
+.podcast__img-container {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.podcast__img-container:hover .play-icon__background {
+    background-color: var(--gold);
+}
+.podcast__img-container:hover .podcast-item__cover-image {
+    transform: scale(1.1);
+}
+
+.podcast-item__cover-image {
     width: 200px;
+    transition-duration: 500ms;
+    transform: scale(1);
 }
 
 .podcast__item-title {
