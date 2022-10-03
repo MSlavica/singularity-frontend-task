@@ -38,3 +38,18 @@ button:hover {
     transition-property: all;
     transition-duration: 500ms;
 }
+
+input {
+    background-color: transparent;
+    color: white;
+    border: 1px #bebebe solid;
+    outline: none;
+    padding: 22px 21px 16px 21px;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
