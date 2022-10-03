@@ -8,12 +8,26 @@ body {
     height: 80px;
 }
 
-.form__wrapper {
+.main-container {
     height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: relative;
+}
+
+.form__close-btn {
+    /* border: 2px red solid; */
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    cursor: pointer;
 }
 
 .form__logo-container {
